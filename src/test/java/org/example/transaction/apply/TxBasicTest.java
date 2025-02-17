@@ -44,13 +44,13 @@ class TxBasicTest {
         public void tx() {
             log.info("call tx");
             boolean txActive = TransactionSynchronizationManager.isActualTransactionActive();
-            log.info("txActive: " + txActive);
+            log.info("txActive {} " , txActive);
         }
 
         public void nonTx() {
-            log.info("call tx");
+            log.info("call nonTx");
             boolean txActive = TransactionSynchronizationManager.isActualTransactionActive();
-            log.info("txActive: " + txActive);
+            log.info("txActive{} " , txActive);
         }
     }
 }
