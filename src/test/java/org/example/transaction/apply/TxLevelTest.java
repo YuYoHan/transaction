@@ -28,6 +28,11 @@ public class TxLevelTest {
         }
     }
 
+    // 트랜잭션 우선 순위 체크
+    /*
+    *   1순위 : 메서드 위에 적용
+    *   2순위 : 클래스 위에 적용
+    * */
     @Log4j2
     @Transactional(readOnly = true)
     static class LevelService {
